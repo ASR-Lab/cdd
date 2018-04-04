@@ -1,0 +1,8 @@
+#!/bin/bash
+
+if [ "$1" == "-s" ]; then
+   pwd > ~/.path
+   echo Path saved!
+else
+   cd $(cat ~/.path)
+fi
